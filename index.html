@@ -74,24 +74,33 @@
 </head>
 <body>
 
-<form action="https://formspree.io/f/movqdany" method="POST">
-    Create An Tfs Account:
+<form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="a778a25b-d48b-41de-b508-4de4da06882d">
+
+    <h2>Create An Tfs Account:</h2>
     <label for="email">Enter An Email with @tfs.org at the last:</label>
     <input type="email" name="email" id="email" required>
 
-    <label for="message">Your Password for Your TFS account:</label>
-    <input type="password" name="message">
+    <label for="password">Your Password for Your TFS account:</label>
+    <input type="password" name="passwor">
 
     <label for="username">Enter A Username:</label>
-    <input type="text" name="for" id="username" required>
+    <input type="text" name="username" id="username" required>
 
     <label>
         <input type="checkbox" name="terms" required> 
         by ticking this checkbox, you agree to create an account with TFS.
     </label>
+    <!-- Honeypot Spam Protection -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-    <button type="submit">Send</button>
+    
+   <input type="hidden" name="redirect" value="https://tfsos.github.io/Thanks/">
+
+    <button type="submit">Create</button>
+
 </form>
-
 </body>
 </html>
